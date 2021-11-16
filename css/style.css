@@ -4,7 +4,8 @@ body {
   line-height: 1.8;
   letter-spacing: .8px;
   color: #333;
-}
+  background-color: #EEEEEE;
+} 
 
 a {
   transition: opacity .3s;
@@ -49,12 +50,13 @@ li {
  見出し
 ---------------------------------*/
 .title {
+  font-family: 'Cherry Swash', cursive;
   font-size: 34px;
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .1em;
-  color: #f5b5d5;
+  color: black;
 }
 
 .lead {
@@ -70,24 +72,38 @@ li {
   justify-content: center;
   height: 65vh;
   text-align: center;
+  position: relative;
+}
+
+.header-image {
+  width: 1800x;
+  height: 1800px;
+  z-index: 0;
 }
 
 .header-inner {
-  padding: 0 40px;
+  padding: 0;
 }
 
 .header-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 72px;
+  font-family: "Amatic SC", cursive;
+  font-size: 100px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #f5b5d5;
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 500px;
 }
 .header-subtitle {
   font-family: "Amatic SC", cursive;
-  font-size: 30px;
+  color: white;
+  font-size: 60px;
   line-height: 1;
   letter-spacing: .08em;
+  position: absolute;
+  top: 350px;
+  left: 700px;
 }
 
 /*--------------------------------
@@ -141,13 +157,14 @@ li {
 }
 
 .gnav-item {
-  margin: 0 20px;
+  margin: 0 50px;
+  font-size: 50px;
 }
 
 .gnav-item a {
   position: relative;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Cherry Swash', cursive;
   line-height: 1;
   display: inline-block;
   padding: 5px 0;
@@ -177,7 +194,7 @@ li {
 }
 
 .works-item:hover {
-  opacity: .9;
+  opacity: 0.5;
 }
 
 .works-item:nth-of-type(3n) {
@@ -222,12 +239,15 @@ li {
   margin-right: 20px;
 }
 
+
 .skill-body {
   flex: 1;
+  padding: 5px;
 }
 
 .skill-name {
   margin-bottom: 3px;
+  font-size: 30px;
 }
 
 /*--------------------------------
@@ -241,11 +261,12 @@ li {
 }
 .profile-img {
   width: 20%;
+  height: 80%;
   margin-right: 30px;
   border-radius: 50%;
 }
 .profile-img img {
-  border-radius: 50%;
+  border-radius: 40%;
 }
 .profile-body {
   flex: 1;
@@ -268,6 +289,10 @@ li {
 .contact-text {
   margin-top: 10px;
 }
+
+.contact-list{
+  font-size: 30px;
+}
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -276,7 +301,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #fadcea;
+  background-color: #BC8F8F;
 }
 
 .page-top .material-icons-outlined {
@@ -289,13 +314,13 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #efc4d8;
+  background-color:#8B4513;
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: white;
 }
 
 /*--------------------------------
